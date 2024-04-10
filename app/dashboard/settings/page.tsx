@@ -63,7 +63,7 @@ export default async function SettingsPage() {
                     <CardHeader>
                         <CardTitle>General Data</CardTitle>
                         <CardDescription>
-                            Please provide general information about yourself. Please don&apos;t forget to save.
+                            Please provide general information about yourself. Please do not forget to save.
                         </CardDescription>
                     </CardHeader>
                     <CardContent>
