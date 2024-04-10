@@ -7,8 +7,11 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+origins = ["https://script-snatch.vercel.app"]  # Replace with allowed origins
+
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=origins,
     allow_credentials=True,  # Adjust if credentials are needed
     allow_methods=["*"],  # Or specify allowed methods (e.g., ["GET", "POST"])
     allow_headers=["*"],  # Or specify allowed headers (e.g., ["Content-Type"])
