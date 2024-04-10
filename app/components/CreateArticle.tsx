@@ -28,7 +28,6 @@ export async function postData(title: string, description: string) {
     });
     if (Uses?.Articles) {
         if (Uses?.Articles.length < 3) {
-            console.log(Subscriber?.status)
             const data = await prisma.article.create({
                 data: {
                     userId: user?.id,
