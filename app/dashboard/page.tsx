@@ -39,7 +39,7 @@ export default async function DashboardPage() {
                 </div>
 
                 <Button asChild>
-                    <Link href="/dashboard/new">+ new</Link>
+                    <Link href="/dashboard/new">Create New Article</Link>
                 </Button>
             </div>
 
