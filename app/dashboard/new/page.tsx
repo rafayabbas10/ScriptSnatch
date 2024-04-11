@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
-import { unstable_noStore as noStore } from "next/cache";
+import { unstable_noStore as noStore, revalidatePath } from "next/cache";
 
 
 
@@ -46,6 +46,9 @@ export default function NewArticleRoute() {
             
         }
     }
+    const revalidateHome = () => {
+        revalidatePath('/', 'layout')
+    }
 
     return (
 
@@ -80,7 +83,7 @@ export default function NewArticleRoute() {
                         <Link href="/dashboard">Cancel</Link>
                     </Button>
                     <Button asChild>
-                        <Link href="/dashboard">Save</Link>
+                        <Link href="/dashboard" onClick={revalidateHome}>Save</Link>
                     </Button>
 
                 </CardFooter>
