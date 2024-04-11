@@ -30,7 +30,7 @@ export default function NewArticleRoute() {
             const match = Url.match(youtubeRegex);
             const id = match ? match[1] : null;
             try {
-                const FetchArticle = await fetch(`http://127.0.0.1:8000/api/v1/id/${id}`)
+                const FetchArticle = await fetch(`https://fastapi-project-x7v5.onrender.com/api/v1/id/${id}`)
                 const ArticleData = await FetchArticle.json();
                 const article = ArticleData.text
                 const work = await postData(Title, article)
