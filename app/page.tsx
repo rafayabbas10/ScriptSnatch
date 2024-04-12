@@ -24,7 +24,7 @@ export default async function Home() {
               Youtube Videos into Articles Instantly
             </h1>
             <p className="max-w-xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores modi aut quis quaerat unde.
+              Are yuo tired of spending endless hours transcribing Youtube videos manually? Do you wish there was an easy way to turn video content into engaging articles? Look no further - ScriptSnatch is here to revolutionize your content creation process.
             </p>
           </div>
           <div className="flex justify-center max-w-sm mx-auto mt-10">
