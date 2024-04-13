@@ -41,7 +41,7 @@ export default function NewArticleRoute() {
                 }
             } catch (err) {
                 setArticle('Either the video is too long or the transcript for the video is not available. Please try a different video.')
-                console.log(err)
+                
 
             }
             
