@@ -9,6 +9,8 @@ import savetime from "../public/savetime.png"
 import quality from "../public/quality.png"
 import ai from "../public/ai.png"
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import Footer from "./components/Footer";
 
 
 export default async function Home() {
@@ -63,8 +65,8 @@ export default async function Home() {
         </div>
       </section>
       <section className="flex items-center justify-center bg-background h-[90vh] mt-20">
-        <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
+        <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-auto md:px-12">
+          <div className="max-w-3xl lg:max-w-max lg:justify-center lg:items-center lg:flex gap-x-40 mx-auto text-center lg:text-start">
             <div>
               <h1 className="text-3xl font-extrabold tracking-tight lg:text-6xl">
                 How Does it Work?
@@ -79,61 +81,61 @@ export default async function Home() {
                 <span className="font-bold">Edit and Customize:</span> Fine-tune the generated article to perfection, adding your personal touch or specific keywords to optimize for search engines.
               </p>
             </div>
-            <div className="flex justify-center max-w-sm mx-auto mt-10">
+            <div className="flex justify-center md:pl-20 max-w-sm mx-auto mt-10">
               <Image src={img2} alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center bg-background h-[90vh] mt-20">
-        <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
+      <section className="flex items-center justify-center bg-background h-[90vh] mt-60">
+        <div className="relative items-center w-[400px] md:w-full px-5 py-12 mt-60 mx-auto lg:px-16 max-w-7xl md:px-12">
+          <div className=" mx-auto text-center mt-60">
             <div>
-              <h1 className="text-3xl font-extrabold tracking-tight lg:text-6xl">
-              Why Choose ScriptSnatch?
+              <h1 className="text-3xl pt-40 font-extrabold tracking-tight lg:text-6xl">
+                Why Choose Script<span className="text-primary">Snatch</span>?
               </h1>
             </div>
-            <div className="flex justify-center  max-w-sm mx-auto mt-20">
+            <div className="flex flex-col gap-5 md:flex-row justify-center mx-auto mt-20">
               <Card className="py-10 px-10 mx-10 flex flex-col items-center justify-center">
                 <Image src={savetime} width={100} height={100} alt="" />
                 <CardTitle className="py-5">
                   Save Time
                 </CardTitle>
                 <CardDescription>
-                Say goodbye to tedious transcriptions! With Script Snatch, you can generate high-quality articles in minutes, freeing up valuable time for other tasks.
+                  Say goodbye to tedious transcriptions! With Script Snatch, you can generate high-quality articles in minutes, freeing up valuable time for other tasks.
                 </CardDescription>
               </Card>
-              <Card className="py-10 px-10 mx- 10 flex flex-col items-center justify-center">
+              <Card className="py-10 px-10 mx-10 10 flex flex-col items-center justify-center">
                 <Image src={quality} width={100} height={100} alt="" />
                 <CardTitle className="py-5">
-                Quality Content
+                  Quality Content
                 </CardTitle>
                 <CardDescription>
-                Our articles are crafted to perfection, preserving the essence of the original video while enhancing readability and engagement.
+                  Our articles are crafted to perfection, preserving the essence of the original video while enhancing readability and engagement.
                 </CardDescription>
               </Card>
               <Card className="py-10 px-10 mx-10 flex flex-col items-center justify-center">
                 <Image src={ai} width={100} height={100} alt="" />
                 <CardTitle className="py-5">
-                AI-Powered, Human Touch
+                  AI-Powered, Human Touch
                 </CardTitle>
                 <CardDescription>
-                Our articles are crafted to perfection, preserving the essence of the original video while enhancing readability and engagement.
+                While our tool utilizes updated AI technology, the final output feels completely human, passing the scrutiny of AI detector tools effortlessly.
                 </CardDescription>
               </Card>
             </div>
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center bg-background h-[90vh]">
-        <div className="relative items-center w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
-          <div className="max-w-3xl mx-auto text-center">
+      <section className="flex items-center mt-40 justify-center bg-background h-[150vh]">
+        <div className="relative items-center mt-40 w-full px-5 py-12 mx-auto lg:px-16 max-w-7xl md:px-12">
+          <div className="max-w-3xl mx-auto mt-40 text-center">
             <div>
               <h1 className="mt-8 text-3xl font-extrabold tracking-tight lg:text-6xl">
-              Ready to Elevate Your Content Creation Game?
+                Ready to Elevate Your Content Creation Game?
               </h1>
               <p className="max-w-xl mx-auto mt-8 text-base lg:text-xl text-secondary-foreground">
-              Don't let valuable video content go to waste. Transform it into compelling articles with Script Snatch. Sign up now and Say goodbye to tedious transcriptions and hello to effortless article generation.
+                Don't let valuable video content go to waste. Transform it into compelling articles with Script Snatch. Sign up now and Say goodbye to tedious transcriptions and hello to effortless article generation.
               </p>
             </div>
             <div className="flex justify-center max-w-sm mx-auto mt-10">
@@ -146,6 +148,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
+      
     </>
   );
 }

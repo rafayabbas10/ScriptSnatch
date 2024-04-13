@@ -7,6 +7,7 @@ import prisma from "./lib/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { unstable_noStore as noStore } from "next/cache";
 import { Analytics } from '@vercel/analytics/react';
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"], display: 'swap', adjustFontFallback: false });
 
@@ -61,6 +62,7 @@ export default async function RootLayout({
         >
           <Navbar />
           {children}
+          <Footer />
           <Analytics />
         </ThemeProvider>
       </body>
